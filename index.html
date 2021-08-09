@@ -1,37 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banana Speak App</title>
     <style>
-        textarea{
+        textarea {
             display: block;
             width: 90%;
             height: 20vh;
-            margin: 1rem;
+            margin: 20px;
             padding: 1rem;
+            background-color: #94c3e0;
+            border-radius: 20px;
         }
-        #output{
+
+        #output {
             border: 1px solid black;
             height: 20vh;
             width: 90%;
             margin: 1rem;
             padding: 1rem;
+            background-color: #94c3e0;
+            border-radius: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: yellow;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 20px;
+        }
+
+        button {
+            background-color: green;
+            padding: 10px;
+            border: none;
+            color: white;
+            margin-left: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .btn-center{
+            text-align: center;
+        }
+        .show{
+            text-align: center;
+            font-size: 22px;
+            font-weight: 800;
         }
     </style>
 </head>
+
 <body>
     <h1>Talk Banana</h1>
-    <textarea placeholder="put your sentence in english here and we will convert into banana " name="" id="txt-input"></textarea>
-    <button id="btn-translate">Translate</button>
+    <textarea placeholder="Put Your Sentence in English here and We Will Convert into  Pig-Latin and Click the below Button " name=""
+        id="txt-input"></textarea>
+    <div class="btn-center">
+        <button id="btn-translate">Translate English text to pig-latin</button>
+    </div>
 
-    <div>Output will come here 👇👇👇</div>
+    <div class="show">Output will come here 👇👇👇</div>
 
     <div id="output"></div>
 
 
     <script src="app.js"></script>
 </body>
+
 </html>
